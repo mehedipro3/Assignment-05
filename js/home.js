@@ -20,9 +20,10 @@ document.getElementById('noakhali-btn')
     const p = document.createElement('p');
     p.innerText = `${noakhaliInput} taka is donated for Donate for Flood at Noakhali, Bangladesh`;
     document.getElementById('transaction-container').appendChild(p);
+    const p2 = document.createElement('p');
     
-    const d = new Date();
-    document.getElementById('transaction-container').innerHTML = d;
+    p2.innerText = new Date();
+    document.getElementById('transaction-container').appendChild(p2);
 
   });
 
@@ -46,10 +47,11 @@ document.getElementById('flood-btn')
 
     const p = document.createElement('p');
     p.innerText = `${floodInput} taka is donated for Donate for Flood Relief in Feni,Bangladesh`;
-
-    const d = new Date();
-    document.getElementById('transaction-container').innerHTML = d;
     document.getElementById('transaction-container').appendChild(p);
+
+    const p2 = document.createElement('p');
+    p2.innerText = new Date();
+    document.getElementById('transaction-container').appendChild(p2);
   });
 
 
@@ -76,8 +78,9 @@ document.getElementById('quota-btn')
 
     const p = document.createElement('p');
     p.innerText = `${quotaInput} taka is donated for Aid for Injured in the Quota Movement`;
-
-    const d = new Date();
-    document.getElementById('transaction-container').innerHTML = d;
     document.getElementById('transaction-container').appendChild(p);
+
+    const p2 = document.createElement('p');
+    p2.innerText = new Date();
+    document.getElementById('transaction-container').appendChild(p2);
   });
