@@ -1,14 +1,14 @@
-// function getInputFieldById(id) {
-//   const inputValue = document.getElementById(id).value;
-//   const inputNumber = parseFloat(inputValue);
-//   return inputNumber;
-// }
+function getInputFieldById(id) {
+  const inputValue = document.getElementById(id).value;
+  const inputNumber = parseFloat(inputValue);
+  return inputNumber;
+}
 
-// function getTextFieldById(id){
-//   const textValue = document.getElementById(id).innerText;
-//   const textNumber = parseFloat(textValue);
-//   return textNumber;
-// }
+function getTextFieldById(id){
+  const textValue = document.getElementById(id).innerText;
+  const textNumber = parseFloat(textValue);
+  return textNumber;
+}
 
 // function getModalBoxById(id){
 //   const showModal = noakhali-btn.showModal();
@@ -35,11 +35,8 @@
 
 function showSectionById(id){
   // hide all the sections
-  document.getElementById('blog-part').classList.add('hidden');
   document.getElementById('transactions-section').classList.add('hidden');
   document.getElementById('donation-part').classList.add('hidden');
-  document.getElementById('home-btn').classList.add('hidden');
-  
   
   // show the section with the provide id as parameter
   document.getElementById(id).classList.remove('hidden');
