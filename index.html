@@ -10,8 +10,8 @@
 </head>
 
 <body>
-  <header class="sticky top-0 overflow-hidden backdrop-blur-lg">
-    <nav>
+  <header class="sticky top-0 overflow-hidden z-10 ">
+    <nav >
       <div class="navbar bg-base-100 bg-[#F9F7F3] ">
         <div class="navbar-start">
           <button id="blog-btn" class="btn bg-[#B4F461] ">Blog</button>
@@ -28,7 +28,7 @@
       </div>
     </nav>
 
-    <div class="pt-10 flex justify-center gap-9">
+    <div class="pt-10 flex justify-center gap-9 bg-white/20 backdrop-blur-2xl" >
       <!-- 2 button  -->
       <button id="donation-btn" class="btn bg-[#B4F461]">Donation</button>
       <button id="history-btn" class="btn ">History</button>
@@ -125,12 +125,31 @@
       </div>
     </section>
 
+    <!-- modal section start -->
+    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+      <div class="modal-box text-center space-y-2">
+        <h3 class="text-3xl font-extrabold ">Congrates!</h3>
+        <img class="mx-auto" src="assets/coin.png" alt="">
+        <p class="py-4">You Have Donate For Humankind</p>
+        <h3 class="text-lg font-bold">Successfully</h3>
+        <div class="modal-action ">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn pl-4">Close Confirmation</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+
+    <!-- modal section end -->
+
     <!-- Transactions start -->
     <section id="transactions-section" class="hidden">
                 
       <div id="transaction-container" class="space-y-3 border rounded-lg  pl-3 py-3" >
         
       </div>
+      
       
                 <!-- Transactions end -->
       
@@ -139,7 +158,7 @@
     
   </main>
 
-  <footer class="footer bg-neutral bg-[#F9F7F3] p-8 mt-0">
+  <footer id="footer-section" class="footer bg-neutral bg-[#F9F7F3] p-8 mt-0">
   </footer>
   <script src="js/utilities.js"></script>
   <script src="js/home.js"></script>

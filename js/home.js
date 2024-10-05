@@ -11,12 +11,17 @@ document.getElementById('noakhali-btn')
     const balance = getTextFieldById('account-balance');
     const noakhaliBalance = getTextFieldById('noakhali-balance');
 
+    if (noakhaliInput > balance) {
+      alert('Failed to Donate');
+      return;
+    }
+
     const accountNewBalance = balance - noakhaliInput;
     document.getElementById('account-balance').innerText = accountNewBalance;
 
     const noakhaliNewBalance = noakhaliInput + noakhaliBalance;
     document.getElementById('noakhali-balance').innerText = noakhaliNewBalance;
-
+    
     const p = document.createElement('p');
     p.innerText = `${noakhaliInput} taka is donated for Donate for Flood at Noakhali, Bangladesh`;
     document.getElementById('transaction-container').appendChild(p);
@@ -24,6 +29,8 @@ document.getElementById('noakhali-btn')
     
     p2.innerText = new Date();
     document.getElementById('transaction-container').appendChild(p2);
+
+    document.getElementById('my_modal_5').showModal();
 
   });
 
@@ -39,6 +46,11 @@ document.getElementById('flood-btn')
     const balance = getTextFieldById('account-balance');
     const floodBalance = getTextFieldById('flood-balance');
 
+    if (floodInput > balance) {
+      alert('Failed to Donate');
+      return;
+    }
+
     const accountNewBalance = balance - floodInput;
     document.getElementById('account-balance').innerText = accountNewBalance;
 
@@ -52,6 +64,9 @@ document.getElementById('flood-btn')
     const p2 = document.createElement('p');
     p2.innerText = new Date();
     document.getElementById('transaction-container').appendChild(p2);
+
+    document.getElementById('my_modal_5').showModal();
+
   });
 
 
@@ -68,6 +83,11 @@ document.getElementById('quota-btn')
     const balance = getTextFieldById('account-balance');
     const quotaBalance = getTextFieldById('quota-balance');
 
+    if (quotaInput > balance) {
+      alert('Failed to Donate');
+      return;
+    }
+
     const accountNewBalance = balance - quotaInput;
     document.getElementById('account-balance').innerText = accountNewBalance;
 
@@ -83,4 +103,16 @@ document.getElementById('quota-btn')
     const p2 = document.createElement('p');
     p2.innerText = new Date();
     document.getElementById('transaction-container').appendChild(p2);
+
+    document.getElementById('my_modal_5').showModal();
+
   });
+
+
+
+
+
+
+
+
+  
