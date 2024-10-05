@@ -21,7 +21,7 @@ document.getElementById('noakhali-btn')
 
     const noakhaliNewBalance = noakhaliInput + noakhaliBalance;
     document.getElementById('noakhali-balance').innerText = noakhaliNewBalance;
-    
+   
     const p = document.createElement('p');
     p.innerText = `${noakhaliInput} taka is donated for Donate for Flood at Noakhali, Bangladesh`;
     document.getElementById('transaction-container').appendChild(p);
